@@ -16,13 +16,7 @@
       "data": {
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/main/data/VicNatPark.csv"
       },
-      "mark": {"type": "circle", "tooltip": [
-                                    {"field": "Name", "type": "nominal"},
-                                    {"field": "Latitude_cl", "type": "quantitative", "title": "Latitude"},
-                                    {"field": "Longitude_cl", "type": "quantitative", "title": "Longitude"},
-                                    {"field": "Year", "type": "quantitative"},
-                                    {"field": "Area (Ha)", "type": "quantitative"} ]
-              },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "Longitude_cl", "type": "quantitative"},
         "latitude": {"field": "Latitude_cl", "type": "quantitative"},
