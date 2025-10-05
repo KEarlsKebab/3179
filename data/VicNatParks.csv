@@ -1,57 +1,58 @@
-Name,Latitude,Longitude,Latitude_cl,Longitude_cl,Year,Area (Ha),Type
-Alfred National Park,37°3417S,149°2137E,-37.57138889,149.3602778,1925,3050,Terrestrial
-Alpine National Park,37°2015S,146°4525E,-37.3375,146.7569444,1989,646000,Terrestrial
-Barmah National Park,35°5200S,145°0705E,-35.86666667,145.1180556,2010,28490,Terrestrial
-Baw Baw National Park,37°4550S,146°1323E,-37.76388889,146.2230556,1979,13530,Terrestrial
-Brisbane Ranges National Park,37°4743S,144°1644E,-37.79527778,144.2788889,1973,7718,Terrestrial
-Bunurong Marine National Park,38°4128S,145°3922E,-38.69111111,145.6561111,2002,2100,Marine
-Burrowa-Pine Mountain National Park,36°0524S,147°4529E,-36.09,147.7580556,1978,18400,Terrestrial
-Cape Howe Marine National Park,37°3200S,149°5700E,-37.53333333,149.95,2002,4050,Terrestrial
-Chiltern-Mount Pilot National Park,36°0759S,146°3604E,-36.13305556,146.6011111,2002,21650,Terrestrial
-Churchill Island Marine National Park,38°2953S,145°1901E,-38.49805556,145.3169444,2002,670,Marine
-Churchill National Park,37°5705S,145°1536E,-37.95138889,145.26,1941,271,Terrestrial
-Cobboboonee National Park,38°0735S,141°2646E,-38.12638889,141.4461111,2008,18510,Terrestrial
-Coopracambra National Park,37°1841S,149°1312E,-37.31138889,149.22,1988,38800,Terrestrial
-Corner Inlet Marine National Park,38°4600S,146°2000E,-38.76666667,146.3333333,2002,1550,Marine
-Croajingolong National Park,37°3700S,149°2800E,-37.61666667,149.4666667,1979,88355,Terrestrial
-Dandenong Ranges National Park,37°4837S,145°2310E,-37.81027778,145.3861111,1987,3540,Terrestrial
-Discovery Bay Marine National Park,38°2100S,141°2200E,-38.35,141.3666667,2002,2770,Marine
-Errinundra National Park,37°1709S,148°5342E,-37.28583333,148.895,1988,26875,Terrestrial
-French Island National Park,38°1951S,145°2317E,-38.33083333,145.3880556,1998,11100,Terrestrial
-Grampians National Park,37°1228S,142°2400E,-37.20777778,142.4,1984,168277,Terrestrial
-Great Otway National Park,38°4624S,143°3325E,-38.77333333,143.5569444,2005,103185,Terrestrial
-Greater Bendigo National Park,36°4026S,144°1518E,-36.67388889,144.255,2002,17020,Terrestrial
-Gunbower National Park,35°4145S,144°1138E,-35.69583333,144.1938889,2010,9330,Terrestrial
-Hattah-Kulkyne National Park,34°4114S,142°2255E,-34.68722222,142.3819444,1960,48000,Terrestrial
-Heathcote-Graytown National Park,36°4747S,144°5158E,-36.79638889,144.8661111,2002,12833,Terrestrial
-Kara Kara National Park,36°5138S,143°1706E,-36.86055556,143.285,2002,13990,Terrestrial
-Kinglake National Park,37°2423S,145°1240E,-37.40638889,145.2111111,1928,23210,Terrestrial
-Lake Eildon National Park,37°0746S,145°5208E,-37.12944444,145.8688889,1997,27750,Terrestrial
-Lind National Park,37°3414S,148°5736E,-37.57055556,148.96,1925,1370,Terrestrial
-Little Desert National Park,36°3624S,141°1120E,-36.60666667,141.1888889,1968,132647,Terrestrial
-Lower Glenelg National Park,38°0358S,141°1720E,-38.06611111,141.2888889,1969,27300,Terrestrial
-Lower Goulburn National Park,36°1054S,145°0712E,-36.18166667,145.12,2010,9310,Terrestrial
-Mitchell River National Park,37°3920S,147°2046E,-37.65555556,147.3461111,1986,14250,Terrestrial
-Mornington Peninsula National Park,38°3008S,144°5318E,-38.50222222,144.8883333,1988,2686,Terrestrial
-Morwell National Park,38°2159S,146°2328E,-38.36638889,146.3911111,1967,565,Terrestrial
-Mount Buffalo National Park,36.7552°S,146.7911° E,-36.7552,146.7911,1898,31000,Terrestrial
-Mount Eccles National Park,38°0444S,141°5319E,-38.07888889,141.8886111,1960,5470,Terrestrial
-Mount Richmond National Park,38°1613S,141°2530E,-38.27027778,141.425,1960,1733,Terrestrial
-Murray-Sunset National Park,34°4635S,141°2902E,-34.77638889,141.4838889,1991,633000,Terrestrial
-Ninety Mile Beach Marine National Park,38°2500S,147°1100E,-38.41666667,147.1833333,2002,2750,Marine
-Organ Pipes National Park,37°4007S,144°4601E,-37.66861111,144.7669444,1972,121,Terrestrial
-Point Addis Marine National Park,38°2500S,144°1400E,-38.41666667,144.2333333,2002,4600,Marine
-Point Hicks Marine National Park,"37°4800""S","149°1500""E",-37.8,149.25,2002,4000,Marine
-Point Nepean National Park,38.3156°S,144.6833° E,-38.3156,144.6833,1988,560,Terrestrial
-Port Campbell National Park,38°3901S,143°0345E,-38.65027778,143.0625,1964,1750,Terrestrial
-Snowy River National Park,37°1630S,148°3311E,-37.275,148.5530556,1979,98700,Terrestrial
-Tarra-Bulga National Park,38°2630S,146°3448E,-38.44166667,146.58,1986,2028,Terrestrial
-Terrick Terrick National Park,36°0834S,144°1342E,-36.14277778,144.2283333,1999,3880,Terrestrial
-The Lakes National Park,37°5813S,147°4431E,-37.97027778,147.7419444,1927,2407,Terrestrial
-Twelve Apostles Marine National Park,38°4000S,143°0600E,-38.66666667,143.1,2002,7500,Marine
-Warby-Ovens National Park,36°1947S,146°1117E,-36.32972222,146.1880556,2010,14655,Terrestrial
-Wilsons Promontory Marine National Park,39°1000S,146°1959E,-39.16666667,146.3330556,2003,15500,Marine
-Wilsons Promontory National Park,39°0048S,146°2338E,-39.01333333,146.3938889,1898,50500,Terrestrial
-Wyperfeld National Park,35°2321S,141°5237E,-35.38916667,141.8769444,1921,357017,Terrestrial
-Yarra Ranges National Park,37°4050S,145°5928E,-37.68055556,145.9911111,1995,76003,Terrestrial
+Name,Latitude,Longitude,Latitude_cl,Longitude_cl,Year,Area_(Ha),Type
+Alfred National Park,37.3417S,149.2137E,-37.57138889,149.3602778,1925,3050,Terrestrial
+Alpine National Park,37.2015S,146.4525E,-37.3375,146.7569444,1989,646000,Terrestrial
+Barmah National Park,35.5200S,145.0705E,-35.86666667,145.1180556,2010,28490,Terrestrial
+Baw Baw National Park,37.4550S,146.1323E,-37.76388889,146.2230556,1979,13530,Terrestrial
+Brisbane Ranges National Park,37.4743S,144.1644E,-37.79527778,144.2788889,1973,7718,Terrestrial
+Bunurong Marine National Park,38.4128S,145.3922E,-38.69111111,145.6561111,2002,2100,Marine
+Burrowa-Pine Mountain National Park,36.0524S,147.4529E,-36.09,147.7580556,1978,18400,Terrestrial
+Cape Howe Marine National Park,37.3200S,149.5700E,-37.53333333,149.95,2002,4050,Terrestrial
+Chiltern-Mount Pilot National Park,36.0759S,146.3604E,-36.13305556,146.6011111,2002,21650,Terrestrial
+Churchill Island Marine National Park,38.2953S,145.1901E,-38.49805556,145.3169444,2002,670,Marine
+Churchill National Park,37.5705S,145.1536E,-37.95138889,145.26,1941,271,Terrestrial
+Cobboboonee National Park,38.0735S,141.2646E,-38.12638889,141.4461111,2008,18510,Terrestrial
+Coopracambra National Park,37.1841S,149.1312E,-37.31138889,149.22,1988,38800,Terrestrial
+Corner Inlet Marine National Park,38.4600S,146.2000E,-38.76666667,146.3333333,2002,1550,Marine
+Croajingolong National Park,37.3700S,149.2800E,-37.61666667,149.4666667,1979,88355,Terrestrial
+Dandenong Ranges National Park,37.4837S,145.2310E,-37.81027778,145.3861111,1987,3540,Terrestrial
+Discovery Bay Marine National Park,38.2100S,141.2200E,-38.35,141.3666667,2002,2770,Marine
+Errinundra National Park,37.1709S,148.5342E,-37.28583333,148.895,1988,26875,Terrestrial
+French Island National Park,38.1951S,145.2317E,-38.33083333,145.3880556,1998,11100,Terrestrial
+Grampians National Park,37.1228S,142.2400E,-37.20777778,142.4,1984,168277,Terrestrial
+Great Otway National Park,38.4624S,143.3325E,-38.77333333,143.5569444,2005,103185,Terrestrial
+Greater Bendigo National Park,36.4026S,144.1518E,-36.67388889,144.255,2002,17020,Terrestrial
+Gunbower National Park,35.4145S,144.1138E,-35.69583333,144.1938889,2010,9330,Terrestrial
+Hattah-Kulkyne National Park,34.4114S,142.2255E,-34.68722222,142.3819444,1960,48000,Terrestrial
+Heathcote-Graytown National Park,36.4747S,144.5158E,-36.79638889,144.8661111,2002,12833,Terrestrial
+Kara Kara National Park,36.5138S,143.1706E,-36.86055556,143.285,2002,13990,Terrestrial
+Kinglake National Park,37.2423S,145.1240E,-37.40638889,145.2111111,1928,23210,Terrestrial
+Lake Eildon National Park,37.0746S,145.5208E,-37.12944444,145.8688889,1997,27750,Terrestrial
+Lind National Park,37.3414S,148.5736E,-37.57055556,148.96,1925,1370,Terrestrial
+Little Desert National Park,36.3624S,141.1120E,-36.60666667,141.1888889,1968,132647,Terrestrial
+Lower Glenelg National Park,38.0358S,141.1720E,-38.06611111,141.2888889,1969,27300,Terrestrial
+Lower Goulburn National Park,36.1054S,145.0712E,-36.18166667,145.12,2010,9310,Terrestrial
+Mitchell River National Park,37.3920S,147.2046E,-37.65555556,147.3461111,1986,14250,Terrestrial
+Mornington Peninsula National Park,38.3008S,144.5318E,-38.50222222,144.8883333,1988,2686,Terrestrial
+Morwell National Park,38.2159S,146.2328E,-38.36638889,146.3911111,1967,565,Terrestrial
+Mount Buffalo National Park,36.7552.S,146.7911. E,-36.7552,146.7911,1898,31000,Terrestrial
+Mount Eccles National Park,38.0444S,141.5319E,-38.07888889,141.8886111,1960,5470,Terrestrial
+Mount Richmond National Park,38.1613S,141.2530E,-38.27027778,141.425,1960,1733,Terrestrial
+Murray-Sunset National Park,34.4635S,141.2902E,-34.77638889,141.4838889,1991,633000,Terrestrial
+Ninety Mile Beach Marine National Park,38.2500S,147.1100E,-38.41666667,147.1833333,2002,2750,Marine
+Organ Pipes National Park,37.4007S,144.4601E,-37.66861111,144.7669444,1972,121,Terrestrial
+Point Addis Marine National Park,38.2500S,144.1400E,-38.41666667,144.2333333,2002,4600,Marine
+Point Hicks Marine National Park,"37.4800""S","149.1500""E",-37.8,149.25,2002,4000,Marine
+Point Nepean National Park,38.3156.S,144.6833. E,-38.3156,144.6833,1988,560,Terrestrial
+Port Campbell National Park,38.3901S,143.0345E,-38.65027778,143.0625,1964,1750,Terrestrial
+Snowy River National Park,37.1630S,148.3311E,-37.275,148.5530556,1979,98700,Terrestrial
+Tarra-Bulga National Park,38.2630S,146.3448E,-38.44166667,146.58,1986,2028,Terrestrial
+Terrick Terrick National Park,36.0834S,144.1342E,-36.14277778,144.2283333,1999,3880,Terrestrial
+The Lakes National Park,37.5813S,147.4431E,-37.97027778,147.7419444,1927,2407,Terrestrial
+Twelve Apostles Marine National Park,38.4000S,143.0600E,-38.66666667,143.1,2002,7500,Marine
+Warby-Ovens National Park,36.1947S,146.1117E,-36.32972222,146.1880556,2010,14655,Terrestrial
+Wilsons Promontory Marine National Park,39.1000S,146.1959E,-39.16666667,146.3330556,2003,15500,Marine
+Wilsons Promontory National Park,39.0048S,146.2338E,-39.01333333,146.3938889,1898,50500,Terrestrial
+Wyperfeld National Park,35.2321S,141.5237E,-35.38916667,141.8769444,1921,357017,Terrestrial
+Yarra Ranges National Park,37.4050S,145.5928E,-37.68055556,145.9911111,1995,76003,Terrestrial
+
 
