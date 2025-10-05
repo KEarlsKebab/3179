@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/main/data/VicNatPark.xlsx"
+        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/main/data/VicNatPark.csv"
       },
       "mark": {"type": "circle", "tooltip": [
                                     {"field": "Name", "type": "nominal"},
