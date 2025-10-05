@@ -1,4 +1,4 @@
-Name,Latitude,Longitude,Latitude_cl,Longitude_cl,Year,Area_(Ha),Type
+Name,Latitude,Longitude,Latitude_cl,Longitude_cl,Year,Area_Ha,Type
 Alfred National Park,37.3417S,149.2137E,-37.57138889,149.3602778,1925,3050,Terrestrial
 Alpine National Park,37.2015S,146.4525E,-37.3375,146.7569444,1989,646000,Terrestrial
 Barmah National Park,35.5200S,145.0705E,-35.86666667,145.1180556,2010,28490,Terrestrial
@@ -54,5 +54,6 @@ Wilsons Promontory Marine National Park,39.1000S,146.1959E,-39.16666667,146.3330
 Wilsons Promontory National Park,39.0048S,146.2338E,-39.01333333,146.3938889,1898,50500,Terrestrial
 Wyperfeld National Park,35.2321S,141.5237E,-35.38916667,141.8769444,1921,357017,Terrestrial
 Yarra Ranges National Park,37.4050S,145.5928E,-37.68055556,145.9911111,1995,76003,Terrestrial
+
 
 
