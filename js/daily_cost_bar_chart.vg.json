@@ -6,7 +6,8 @@
     },
     "mark": "bar",
     "encoding": {
-        "x": { "field": "Year", "type": "quantitative"},
-        "y": { "field": "Area_Ha", "type": "quantitative"}
+        "x": {"timeUnit": "year", "field": "Year", "type": "ordinal"},
+        "y": { "aggregate": "sum", "field": "Area_Ha", "title": "Total Area (Ha)"
+        }
     }
 }
