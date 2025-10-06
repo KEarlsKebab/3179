@@ -3,7 +3,10 @@
   "width": 800,
   "height": 450,
   "title": "Victorian National Parks",
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "equirectangular",
+    "center": [143, -37], 
+    "scale": 3500,
+    "translate": [300, 225]},
   "layer": [
     {
       "data": {
@@ -17,7 +20,10 @@
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
         "format": {"type": "topojson", "feature":"Campgrounds"}
       },
-      "mark": {"type": "geoshape", "fill": "black", "stroke": "white"}
+      "mark": {"type": "geoshape", "fill": "black", "stroke": "white"},
+      "encoding": {
+      "tooltip": [{"field": "properties.PARK_NAME", "type": "nominal", "title": "Park"},
+    {"field": "properties.SITE_NAME", "type": "nominal", "title": "Site"}]}
     }
   ]
 }
