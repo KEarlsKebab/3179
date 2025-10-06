@@ -1,12 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Cheapest European Cities" },
+    "title": { "text": "Area over Time" },
     "data": {
-        "url": "data/city_daily_cost.csv"
+        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
     },
     "mark": "bar",
     "encoding": {
-        "x": { "field": "daily_cost", "type": "quantitative", "title":"Daily Cost"},
-        "y": { "field": "city", "type": "nominal", "title": null}
+        "x": { "field": "Year", "type": "quantitative"},
+        "y": { "field": "Area_Ha", "type": "quantitative"}
     }
 }
