@@ -1,0 +1,14 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Area over Time" },
+    "data": {
+        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
+        "format": {"type": "topojson", "feature":"Campgrounds"}
+    },
+    "mark": {"type":"bar", "tooltip": {"content": "data"}},
+    "encoding": {
+        "x": {"field": "properties.PARK_NAME", "type": "ordinal", "sort":"x"},
+        "y": {"aggregate": "count", "title": "No of camps per park"
+        }
+    }
+}
