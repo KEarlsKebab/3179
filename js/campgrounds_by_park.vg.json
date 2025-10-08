@@ -7,7 +7,7 @@
     },
     "mark": {"type":"bar", "tooltip": {"content": "data"}},
     "encoding": {
-        "x": {"field": "properties.PARK_NAME", "type": "ordinal", "sort":"x"},
+        "x": {"field": "properties.PARK_NAME", "type": "ordinal", "sort":"-y"},
         "y": {"aggregate": "count", "title": "No of camps per park"
         }
     }
