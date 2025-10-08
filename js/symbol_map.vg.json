@@ -3,7 +3,10 @@
   "width": 800,
   "height": 450,
   "title": "Victorian National Parks",
-  "projection": {"type": "equalEarth"},
+  "projection": {"type": "equirectangular",
+    "center": [143, -37], 
+    "scale": 3500,
+    "translate": [300, 225]},
   "layer": [
     {
       "data": {
@@ -30,7 +33,7 @@
           "field": "Year",
           "type": "quantitative",
           "title": "Year Established",
-          "scale": {"scheme": "reds"}
+          "scale": {"scheme": "reds", "domain": [1900, 2020]}
         }
       }
     }
