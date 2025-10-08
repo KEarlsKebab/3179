@@ -24,7 +24,7 @@
         "longitude": {"field": "Longitude_cl", "type": "quantitative"},
         "latitude": {"field": "Latitude_cl", "type": "quantitative"},
         "size": {
-          "field": "Area (Ha)",
+          "field": "Area_Ha",
           "type": "quantitative",
           "title": "Area (Ha)",
           "scale": {"domain": [0, 700000]}
@@ -39,3 +39,4 @@
     }
   ]
 }
+
