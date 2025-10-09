@@ -1,4 +1,4 @@
-Name,Latitude,Longitude,Year,Area (Ha),Type,Campsites,Melbourne_Distance
+Name,Latitude,Longitude,Year,Area_Ha,Type,Campsites,Melbourne_Distance
 Alfred National Park,-37.57138889,149.3602778,1925,3050,Terrestrial,0,387.8030984
 Alpine National Park,-37.3375,146.7569444,1989,646000,Terrestrial,77,166.7123313
 Barmah National Park,-35.86666667,145.1180556,2010,28490,Terrestrial,3,216.9277251
@@ -54,3 +54,4 @@ Wilsons Promontory Marine National Park,-39.16666667,146.3330556,2003,15500,Mari
 Wilsons Promontory National Park,-39.01333333,146.3938889,1898,50500,Terrestrial,13,182.5781172
 Wyperfeld National Park,-35.38916667,141.8769444,1921,357017,Terrestrial,3,385.4038653
 Yarra Ranges National Park,-37.68055556,145.9911111,1995,76003,Terrestrial,1,91.58916295
+
