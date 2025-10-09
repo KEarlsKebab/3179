@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 500,
@@ -8,9 +9,10 @@
   },
   "params": [{
     "name":"Area_selection",
-      "select": {"type": "point", "fields": ["Area (Ha)"]}, 
+      "select": {"type": "point", "fields": ["Area_Ha"]}, 
       "bind": "legend"
   }],
+  "transform": [{"filter": "Area_selection == null || datum.Area_Ha == Area_selection"}],
   "mark": {"type":"circle"},
   "encoding": {
     "x": {
@@ -27,7 +29,7 @@
       "title":"Distance From Melbournce (km)",
       "scale": {"domain": [0,500]}
     },
-    "size": {"field": "Area (Ha)", "type": "quantitative", "scale": {"type": "threshold",
+    "size": {"field": "Area_Ha", "type": "quantitative", "scale": {"type": "threshold",
 "domain": [1000, 10000, 100000, 300000, 600000], "range": [50, 100, 200, 500, 750, 1000]},
 "legend": {"format": ".1s"}},
     "color": {"field": "Type", "type": "nominal"},
@@ -35,7 +37,7 @@
       "condition": {"param": "Area_selection", "value": 0.8},
       "value": 0.1
     },
-  "tooltip":[{"field":"Name"},{"field":"Area (Ha)"},
+  "tooltip":[{"field":"Name"},{"field":"Area_Ha"},
   {"field":"Melbourne_Distance", "title":"Distance to CBD (km)"},
   {"field":"Year"}]
   }
