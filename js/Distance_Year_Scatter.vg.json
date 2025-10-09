@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 500,
+  "width": 500,
+  "title": "Distance and Establishments",
+  "data": {
+    "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
+  },
+  "mark": {"type":"circle"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "title":"Year Established",
+      "axis": {"tickCount": 7},
+      "scale": {"domain":[1890, 2020]}
+    },
+    "y": {
+      "field": "Melbourne_Distance",
+      "type": "quantitative",
+      "axis": { "tickCount": 6},
+      "title":"Distance From Melbournce (km)",
+      "scale": {"domain": [0,500]}
+    },
+    "size": {"field": "Area (Ha)", "type": "quantitative", "scale": {"rangeMax":7500}},
+    "color": {"field": "Type", "type": "nominal"},
+  "tooltip":[{"field":"Name"},{"field":"Area (Ha)"},
+  {"field":"Melbourne_Distance", "title":"Distance to CBD (km)"},
+  {"field":"Year"}]
+  }
+}
