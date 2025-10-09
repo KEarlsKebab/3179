@@ -3,10 +3,12 @@
   "width": 800,
   "height": 450,
   "title": "Victorian National Parks",
-  "projection": {"type": "equirectangular",
-    "center": [143, -37], 
+  "projection": {
+    "type": "equirectangular",
+    "center": [143, -37],
     "scale": 3500,
-    "translate": [300, 225]},
+    "translate": [300, 225]
+  },
   "layer": [
     {
       "data": {
@@ -24,9 +26,10 @@
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
         "size": {
-          "field": "Area (Ha)",
+          "field": "Area_Ha",
           "type": "quantitative",
-          "scale": {"domain": [0, 700000]}
+          "scale": {"domain": [0, 700000]},
+          "title": "Area (Ha)"
         },
         "color": {
           "field": "Year",
@@ -38,4 +41,3 @@
     }
   ]
 }
-
