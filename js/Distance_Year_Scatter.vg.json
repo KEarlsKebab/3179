@@ -8,16 +8,21 @@
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
   },
   "params": [{
-    "name":"Area_selection",
-      "select": {"type": "point", "fields": ["Area_Ha"]}, 
-      "bind": "legend"
+    "name": "Area_selection",
+    "value": 10000,
+    "bind": {
+      "input": "range",
+      "min": 0,
+      "max": 600000,
+      "step": 1000
+    }
   }],
-  "transform": [{"filter": "Area_selection == null || datum.Area_Ha == Area_selection"}],
   "mark": {"type":"circle"},
   "encoding": {
     "x": {
       "field": "Year",
-      "type": "quantitative",
+      "timeUnit":"year",
+      "type": "temporal",
       "title":"Year Established",
       "axis": {"tickCount": 7},
       "scale": {"domain":[1890, 2020]}
@@ -34,7 +39,7 @@
 "legend": {"format": ".1s"}},
     "color": {"field": "Type", "type": "nominal"},
     "opacity": {
-      "condition": {"param": "Area_selection", "value": 0.8},
+      "condition": {"test": "datum.Area_Ha >= Area_selection", "value": 0.8},
       "value": 0.1
     },
   "tooltip":[{"field":"Name"},{"field":"Area_Ha"},
