@@ -20,6 +20,11 @@
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
         "format": {"type": "topojson", "feature":"Campgrounds"}
       },
+      "transform": [
+    {
+      "filter": "slice(datum.properties.PARK_NAME, length(datum.properties.PARK_NAME) - 13) == 'National Park'"
+    }
+  ],
       "mark": {"type": "geoshape", "fill": "black", "stroke": "white"},
       "encoding": {
         "fill": {"field":"properties.PARK_NAME"},
