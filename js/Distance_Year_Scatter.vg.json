@@ -14,7 +14,8 @@
       "input": "range",
       "min": 0,
       "max": 600000,
-      "step": 1000
+      "step": 1000,
+      "name": "Minimum Area"
     }
   }],
   "mark": {"type":"circle"},
