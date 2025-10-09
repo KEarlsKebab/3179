@@ -6,6 +6,11 @@
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
   },
+  "params": [{
+    "name":"Area_selection",
+      "select": {"type": "point", "fields": ["Area (Ha)"]}, 
+      "bind": "legend"
+  }],
   "mark": {"type":"circle"},
   "encoding": {
     "x": {
@@ -23,10 +28,13 @@
       "scale": {"domain": [0,500]}
     },
     "size": {"field": "Area (Ha)", "type": "quantitative", "scale": {"type": "threshold",
-"domain": [1000, 10000, 100000, 300000, 600000],
-"range": [50, 100, 200, 500, 750, 1000]},
+"domain": [1000, 10000, 100000, 300000, 600000], "range": [50, 100, 200, 500, 750, 1000]},
 "legend": {"format": ".1s"}},
     "color": {"field": "Type", "type": "nominal"},
+    "opacity": {
+      "condition": {"param": "Area_selection", "value": 0.8},
+      "value": 0.1
+    },
   "tooltip":[{"field":"Name"},{"field":"Area (Ha)"},
   {"field":"Melbourne_Distance", "title":"Distance to CBD (km)"},
   {"field":"Year"}]
