@@ -22,6 +22,7 @@
       },
       "mark": {"type": "geoshape", "fill": "black", "stroke": "white"},
       "encoding": {
+        "fill": {"field":"properties.PARK_NAME"},
       "tooltip": [{"field": "properties.PARK_NAME", "type": "nominal", "title": "Park"},
     {"field": "properties.SITE_NAME", "type": "nominal", "title": "Site"}]}
     }
