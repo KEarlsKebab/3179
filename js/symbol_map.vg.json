@@ -21,12 +21,11 @@
       },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
-        "longitude": {"field": "Longitude_cl", "type": "quantitative"},
-        "latitude": {"field": "Latitude_cl", "type": "quantitative"},
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"},
         "size": {
-          "field": "Area_Ha",
+          "field": "Area (Ha)",
           "type": "quantitative",
-          "title": "Area (Ha)",
           "scale": {"domain": [0, 700000]}
         },
         "color": {
