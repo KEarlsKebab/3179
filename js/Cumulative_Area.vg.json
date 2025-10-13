@@ -4,10 +4,23 @@
     "data": {
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/CumulativeArea.csv"
     },
-    "mark": "bar",
+    "mark": {"type":"area", 
+      "color": {
+        "gradient": "linear",
+        "x1": 0,
+        "x2": 0,
+        "y1": 1,
+        "y2": 0,
+        "stops": [
+          {"color": "#422a20", "offset": 0},
+          {"color": "#b97a56", "offset": 0.7}, 
+          {"color": "#f2e1b3", "offset": 1}    
+        ]}
+    },
     "encoding": {
-        "x": {"timeUnit": "year", "field": "Year", "type": "ordinal"},
-        "y": { "aggregate": "sum", "field": "Area_Ha", "title": "Total Area (Ha)"
-        }
+        "x": {"field": "Year", "type": "temporal"},
+        "y": { "aggregate": "sum", "field": "Sum of Area_Ha", "title": "Total Area (Ha)"
+        },
+        "tooltip":[{"field":"Year", "type": "temporal", "timeUnit":"year", "title":"Year"},{"field":"Sum of Area_Ha", "format":".3s"}]
     }
 }
