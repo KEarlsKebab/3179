@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": { "text": "Area over Time" },
     "data": {
-        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
+        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/CumulativeArea.csv"
     },
     "mark": "bar",
     "encoding": {
