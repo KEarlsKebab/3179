@@ -5,6 +5,11 @@
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
         "format": {"type": "topojson", "feature":"Campgrounds"}
     },
+    "transform": [
+    {
+      "filter": "slice(datum.properties.PARK_NAME, length(datum.properties.PARK_NAME) - 13) == 'National Park'"
+    }
+  ],
     "mark": {"type":"bar", "tooltip": {"content": "data"}},
     "encoding": {
         "x": {"field": "properties.PARK_NAME", "type": "ordinal", "sort":"-y"},
