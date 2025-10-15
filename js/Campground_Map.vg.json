@@ -3,11 +3,11 @@
   "vconcat": [
     {
       "width": 800,
-      "height": 400,
+      "height": 300,
       "title": "Campgrounds by National Park",
       "projection": {
         "type": "equirectangular",
-        "center": [143, -37],
+        "center": [143, -38],
         "scale": 3500,
         "translate": [300, 225]
       },
