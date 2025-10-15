@@ -1,8 +1,8 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "height": 500,
-  "width": 600,
+  "height": 600,
+  "width": 800,
   "title": "Distance and Establishments",
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
