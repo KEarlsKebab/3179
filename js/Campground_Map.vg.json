@@ -42,7 +42,7 @@
             },
             "opacity": {
               "condition": {"param": "parkSelect", "value": 1},
-              "value": 0.2
+              "value": 0.1
             },
             "tooltip": [
               {"field": "properties.PARK_NAME", "type": "nominal", "title": "Park"},
@@ -85,7 +85,7 @@
         },
         "opacity": {
           "condition": {"param": "parkSelect", "value": 1},
-          "value": 0.05
+          "value": 0.1
         },
         "tooltip": [
           {"field": "properties.PARK_NAME", "title": "Park"},
