@@ -1,27 +1,116 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <title>Victorian National Parks</title>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-  
+
+
 </head>
+
 <body>
-  
-<div id="symbol_map"></div>
 
-<script type="text/javascript">
+  <div class="page">
 
-  var spec2 = "js/symbol_map.vg.json";
-  vegaEmbed('#symbol_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    <!-- Title Group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Victorian National Parks</h1>
+        <p>Victoria is home to lots of natural wonders and places to explore.</p>
+      </div>
+    </div>
+    <!-- end Title group -->
 
+    <!-- Top Row -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="ParkMap" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="CampMap" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end Top Row -->
+
+    <!-- 2nd Row -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <div class="description description-left">
+          <h2>Three Equal Columns</h2>
+          <p>In the 1960s with a growing urban sprawl, the Victorian Government rushed to protect its most valueable land for future generations to enjoy. This focus would stay around until the late 2000s.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-3">
+        <div id="DistScatter" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-3" style="width: 31.5%;">
+        <div id="CumulativeArea" class="vis-container" style="margin-left: 15px;"></div>
+      </div>
+
+    </div>
+    <!-- end 2nd Row -->
+
+    <!-- 3rd Row -->
+    <div class="pure-g">
+      <div class="pure-u-2-3">
+        <div id="DistScatter" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-3">
+        <div class="description description-right">
+          <h2>First and Second Columns Combined</h2>
+          <p>Marine national parks were first introduced in 2002 and have since been an important piece of protected land.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- end 3rd Row -->
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by <a href="https://fit3179.github.io/Vega-Lite/" target="_blank">FIT3179
+            Teaching Team</a>. The datasource is <a href="#" target=" _blank">some data repository online</href>.</p>
+      </div>
+    </div>
+
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var symbol_map = "./js/symbol_map.vg.json";
+    var Campground_Map = "./js/Campground_Map.vg.json";
+    var Distance_Year_Scatter = "./js/Distance_Year_Scatter.vg.json";
+    var Cumulative_Area = "./js/Cumulative_Area.vg.json";
+
+    vegaEmbed('#ParkMap', symbol_map, { "actions": false });
+
+    vegaEmbed('#CampMap', Campground_Map, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('DistScatter', Distance_Year_Scatter, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('CumulativeArea', Cumulative_Area, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 </body>
+
 </html>
