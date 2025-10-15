@@ -3,8 +3,8 @@
   "vconcat": [
     {
       "width": 800,
-      "height": 450,
-      "title": "Victorian National Parks",
+      "height": 400,
+      "title": "Campgrounds by National Park",
       "projection": {
         "type": "equirectangular",
         "center": [143, -37],
@@ -37,7 +37,8 @@
             "color": {
               "field": "properties.PARK_NAME",
               "type": "nominal",
-              "title": "National Park"
+              "title": "National Park",
+              "legend":null
             },
             "opacity": {
               "condition": {"param": "parkSelect", "value": 1},
@@ -52,8 +53,8 @@
       ]
     },
     {
-      "title": "Campgrounds per Park",
       "width": 800,
+      "height":100,
       "data": {
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
         "format": {"type": "topojson", "feature": "Campgrounds"}
@@ -76,15 +77,15 @@
           "title": "National Park",
           "axis": {"labelAngle":40}
         },
-        "y": {"field": "count", "type": "quantitative", "title": "No. of camps per park"},
+        "y": {"field": "count", "type": "quantitative", "title": "No. of campsites per park"},
         "color": {
           "field": "properties.PARK_NAME",
           "type": "nominal",
-          "scale": {"scheme": "category20"}
+          "scale": {"scheme": "tableau20"}
         },
         "opacity": {
           "condition": {"param": "parkSelect", "value": 1},
-          "value": 0.3
+          "value": 0.1
         },
         "tooltip": [
           {"field": "properties.PARK_NAME", "title": "Park"},
@@ -98,9 +99,5 @@
         }
       ]
     }
-  ],
-  "config": {
-    "view": {"stroke": "transparent"},
-    "legend": {"orient": "bottom"}
-  }
+  ]
 }
