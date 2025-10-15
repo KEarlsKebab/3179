@@ -81,11 +81,11 @@
         "color": {
           "field": "properties.PARK_NAME",
           "type": "nominal",
-          "scale": {"scheme": "tableau20"}
+          "scale": {"scheme": "accent"}
         },
         "opacity": {
           "condition": {"param": "parkSelect", "value": 1},
-          "value": 0.1
+          "value": 0.05
         },
         "tooltip": [
           {"field": "properties.PARK_NAME", "title": "Park"},
