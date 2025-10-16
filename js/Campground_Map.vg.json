@@ -7,9 +7,8 @@
       "title": "Campgrounds by National Park",
       "projection": {
         "type": "equirectangular",
-        "center": [143, -38],
-        "scale": 3500,
-        "translate": [300, 225]
+        "center": [145.5, -38],
+        "scale": 3400,
       },
       "layer": [
         {
