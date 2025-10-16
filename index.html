@@ -90,15 +90,15 @@
 
     vegaEmbed('#ParkMap', symbol_map, { "actions": false });
 
-    vegaEmbed('#CampMap', Campground_Map, { "actions": false }).then(function (result) {
+    vegaEmbed('#CampMap', Campground_Map, { "actions": true }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#DistScatter', Distance_Year_Scatter, { "actions": false }).then(function (result) {
+    vegaEmbed('#DistScatter', Distance_Year_Scatter, { "actions": true }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
 
-    vegaEmbed('#CumulativeArea', Cumulative_Area, { "actions": false }).then(function (result) {
+    vegaEmbed('#CumulativeArea', Cumulative_Area, { "actions": true }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
