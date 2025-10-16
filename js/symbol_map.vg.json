@@ -5,9 +5,8 @@
   "title": "Victorian National Parks",
   "projection": {
     "type": "equirectangular",
-    "center": [143, -37],
-    "scale": 3500,
-    "translate": [300, 225]
+    "center": [145.5, -37],
+    "scale": 3400,
   },
   "layer": [
     {
