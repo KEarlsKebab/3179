@@ -3,7 +3,7 @@
   "vconcat": [
     {
       "width": 600,
-      "height": 300,
+      "height": 450,
       "title": "Campgrounds by National Park",
       "projection": {
         "type": "equirectangular",
