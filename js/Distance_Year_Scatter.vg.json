@@ -46,7 +46,11 @@
       },
       "legend": {"format": ".1s", "orient": "bottom"}
     },
-    "color": {"field": "Type", "type": "nominal", "legend": { "orient": "bottom-left" }},
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": {"orient": "bottom-left"}
+    },
     "opacity": {
       "condition": {"test": "datum.Area_Ha >= Area_selection", "value": 0.8},
       "value": 0.1
@@ -55,7 +59,7 @@
       {"field": "Name"},
       {"field": "Area_Ha"},
       {"field": "Melbourne_Distance", "title": "Distance to CBD (km)"},
-      {"field": "Year"}
+      {"field": "Year", "type": "temporal", "timeUnit":"year"}
     ]
   }
 }
