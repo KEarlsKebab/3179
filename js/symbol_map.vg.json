@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1500,
   "height": 600,
-  "title": "Victorian National Parks",
   "projection": {
     "type": "equirectangular",
     "center": [145.5, -36.5],
