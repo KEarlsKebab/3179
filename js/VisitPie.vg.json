@@ -9,7 +9,7 @@
     "mark": "arc",
   "encoding": {
     "theta": {"field": "Proportion", "type": "quantitative", "stack":true},
-    "color": {"field": "Reason", "type": "nominal", "legend":null}
+    "color": {"field": "Reason", "type": "nominal", "legend":null, "sort":{"field":"Proportion", "order":"descending"}}
   },
   "layer": [{
     "mark": {"type": "arc", "outerRadius": 120}
