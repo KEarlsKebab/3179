@@ -1,34 +1,44 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "height": 300,
-  "width": 300,
+  "height": "container",
+  "width": "container",
   "title": {"text": "Visitors Over Time"},
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VisitorNumbers.csv"
   },
   "transform": [
     {
-      "fold": [
-        "National Parks",
-        "Metropolitan Parks",
-        "Piers"
-      ],
+      "fold": ["National Parks", "Metropolitan Parks", "Piers"],
       "as": ["Category", "Visitors"]
     }
   ],
   "params": [
     {
       "name": "CategorySelect",
-      "select": {"type":"point", "fields": ["Category"]},
-      "bind":"legend",
-      "value":[{"Category":"National Parks"}]
+      "select": {"type": "point", "fields": ["Category"]},
+      "bind": "legend",
+      "value": [{"Category": "National Parks"}]
     }
   ],
   "mark": "line",
   "encoding": {
-    "x": {"field": "Year", "type": "quantitative", "scale":{"domain":[2001,2018]}},
-    "y": {"field": "Visitors", "type": "quantitative", "title": "Visitors (Millions)"},
-    "color": {"field": "Category", "type": "nominal", "title": "Type", "scale":{"scheme":"accent"}},
+    "x": {
+      "field": "Year",
+      "type": "quantitative",
+      "scale": {"domain": [2001, 2018]}
+    },
+    "y": {
+      "field": "Visitors",
+      "type": "quantitative",
+      "title": "Visitors (Millions)"
+    },
+    "color": {
+      "field": "Category",
+      "type": "nominal",
+      "title": "Type",
+      "scale": {"scheme": "accent"},
+      "legend": { "orient": "bottom" }
+    },
     "opacity": {
       "condition": {"param": "CategorySelect", "value": 1},
       "value": 0.4
