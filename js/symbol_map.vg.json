@@ -6,7 +6,7 @@
   "projection": {
     "type": "equirectangular",
     "center": [145.5, -37],
-    "scale": 3400,
+    "scale": 3400
   },
   "layer": [
     {
@@ -20,6 +20,11 @@
       "data": {
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
       },
+      "transform": [
+        {
+          "filter": "datum.Year <= year_slider"
+        }
+      ],
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
@@ -27,8 +32,11 @@
         "size": {
           "field": "Area_Ha",
           "type": "quantitative",
-          "scale": {"type": "threshold",
-"domain": [1000, 10000, 100000, 300000, 600000], "range": [50, 100, 200, 500, 750, 1000]},
+          "scale": {
+            "type": "threshold",
+            "domain": [1000, 10000, 100000, 300000, 600000],
+            "range": [50, 100, 200, 500, 750, 1000]
+          },
           "title": "Area (Ha)"
         },
         "color": {
@@ -37,6 +45,24 @@
           "title": "Year Established",
           "scale": {"scheme": "greens", "domain": [1900, 2020]}
         }
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "year_slider",
+      "value": 1900,
+      "bind": {
+        "input": "range",
+        "min": 1900,
+        "max": 2020,
+        "step": 1,
+        "name": "Year: "
+      },
+      "animate": {
+        "type": "continuous",
+        "duration": 8000,
+        "ease": "linear"
       }
     }
   ]
