@@ -20,17 +20,18 @@
     {
       "name": "CategorySelect",
       "select": {"type":"point", "fields": ["Category"]},
-      "bind":"legend"
+      "bind":"legend",
+      "value":[{"Category":"National Parks"}]
     }
   ],
   "mark": "line",
   "encoding": {
     "x": {"field": "Year", "type": "quantitative", "scale":{"domain":[2001,2018]}},
     "y": {"field": "Visitors", "type": "quantitative", "title": "Visitors (Millions)"},
-    "color": {"field": "Category", "type": "nominal", "title": "Type"},
+    "color": {"field": "Category", "type": "nominal", "title": "Type", "scale":{"scheme":"accent"}},
     "opacity": {
       "condition": {"param": "CategorySelect", "value": 1},
-      "value": 0.1
+      "value": 0.4
     },
     "tooltip": [
       {"field": "Year"},
