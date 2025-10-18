@@ -4,6 +4,7 @@ body *{
   color: DarkSlateGray;
   line-height: 1.8;
   text-align: justify;
+  font-size: 20px;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
   color: ForestGreen;
   font-weight: 1500;
   letter-spacing: 0.5px;
+  font-size: 40px;
 }
 
 body {
