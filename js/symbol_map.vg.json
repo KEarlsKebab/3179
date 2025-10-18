@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1400,
-  "height": 400,
+  "width": 1500,
+  "height": 600,
   "title": "Victorian National Parks",
   "projection": {
     "type": "equirectangular",
@@ -50,8 +50,7 @@
     {"field": "Area_Ha", "type": "quantitative", "title":"Area (Ha)"},
     {"field": "Campsites", "type": "quantitative"},
     {"field": "Melbourne_Distance", "type": "quantitative", "title": "Distance to Melbourne (km)", "format":".3s"}
-  ],
-      }
+  ]}
     }
   ],
   "params": [
