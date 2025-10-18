@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 300,
+  "width": 550,
+  "title": {"text": "Visitors Over Time"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VisitorNumbers.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "National Parks",
+        "Metropolitan Parks",
+        "Piers",
+        "Total"
+      ],
+      "as": ["Category", "Visitors"]
+    }
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "quantitative", "scale":{"domain":[2001,2018]}},
+    "y": {"field": "Visitors", "type": "quantitative", "title": "Visitors"},
+    "color": {"field": "Category", "type": "nominal", "title": "Type"},
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "Category"},
+      {"field": "Visitors", "format": ".3s"}
+    ]
+  }
+}
