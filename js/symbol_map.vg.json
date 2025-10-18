@@ -51,18 +51,13 @@
   "params": [
     {
       "name": "year_slider",
-      "value": 1900,
+      "value": 2020,
       "bind": {
         "input": "range",
         "min": 1900,
         "max": 2020,
         "step": 1,
         "name": "Year: "
-      },
-      "animate": {
-        "type": "continuous",
-        "duration": 8000,
-        "ease": "linear"
       }
     }
   ]
