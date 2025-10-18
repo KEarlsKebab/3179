@@ -24,7 +24,7 @@
         "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
       },
       "transform": [{"filter": "datum.Year <= year_slider"}],
-      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "mark": {"type": "circle"},
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
@@ -42,8 +42,15 @@
           "field": "Year",
           "type": "quantitative",
           "title": "Year Established",
-          "scale": {"scheme": "greens", "domain": [1900, 2020]}
-        }
+          "scale": {"scheme": "greens", "domain": [1900, 2020]},
+        },
+        "tooltip": [
+    {"field": "Name", "type": "nominal"},
+    {"field": "Year", "type": "quantitative", "title":"Year Founded"},
+    {"field": "Area_Ha", "type": "quantitative", "title":"Area (Ha)"},
+    {"field": "Campsites", "type": "quantitative"},
+    {"field": "Melbourne_Distance", "type": "quantitative", "title": "Distance to Melbourne (km)", "format":".3s"}
+  ],
       }
     }
   ],
