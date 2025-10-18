@@ -87,7 +87,7 @@
     var Visit_Pie = ".js/VisitPie.vg.json"
     var Visitor_Line = ".js/VisitorLine.vg.json"
     
-    vegaEmbed('#ParkMap', symbol_map);
+    vegaEmbed('#ParkMap', symbol_map, {"actions": true});
 
     vegaEmbed('#CampMap', Campground_Map, { "actions": true }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
