@@ -5,7 +5,7 @@
   "title": "Victorian National Parks",
   "projection": {
     "type": "equirectangular",
-    "center": [145.5, -37],
+    "center": [145.5, -36.5],
     "scale": 6000
   },
   "layer": [
@@ -45,12 +45,18 @@
           "scale": {"scheme": "greens", "domain": [1900, 2020]}
         },
         "tooltip": [
-    {"field": "Name", "type": "nominal"},
-    {"field": "Year", "type": "quantitative", "title":"Year Founded"},
-    {"field": "Area_Ha", "type": "quantitative", "title":"Area (Ha)"},
-    {"field": "Campsites", "type": "quantitative"},
-    {"field": "Melbourne_Distance", "type": "quantitative", "title": "Distance to Melbourne (km)", "format":".3s"}
-  ]}
+          {"field": "Name", "type": "nominal"},
+          {"field": "Year", "type": "quantitative", "title": "Year Founded"},
+          {"field": "Area_Ha", "type": "quantitative", "title": "Area (Ha)"},
+          {"field": "Campsites", "type": "quantitative"},
+          {
+            "field": "Melbourne_Distance",
+            "type": "quantitative",
+            "title": "Distance to Melbourne (km)",
+            "format": ".3s"
+          }
+        ]
+      }
     }
   ],
   "params": [
