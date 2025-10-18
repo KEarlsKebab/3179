@@ -87,7 +87,9 @@
     var Campground_Map = "./js/Campground_Map.vg.json";
     var Distance_Year_Scatter = "./js/Distance_Year_Scatter.vg.json";
     var Cumulative_Area = "./js/Cumulative_Area.vg.json";
-
+    var Visit_Pie = ".js/VisitPie.vg.json"
+    var Visitor_Line = ".js/VisitorLine.vg.json"
+    
     vegaEmbed('#ParkMap', symbol_map);
 
     vegaEmbed('#CampMap', Campground_Map, { "actions": true }).then(function (result) {
@@ -99,6 +101,14 @@
     }).catch(console.error);
 
     vegaEmbed('#CumulativeArea', Cumulative_Area, { "actions": true }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#VisitPie', Visit_Pie, { "actions": true }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#VisitorLine',Visitor_Line, { "actions": true }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>
