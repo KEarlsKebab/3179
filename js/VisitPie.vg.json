@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 400,
+    "width": 400,
+    "title": { "text": "Why Visitors Go" },
+    "data": {
+        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/WhyVisitorsGo.csv"
+    },
+    "mark": "arc",
+  "encoding": {
+    "theta": {"field": "Proportion", "type": "quantitative", "stack":true},
+    "color": {"field": "Reason", "type": "nominal", "legend":null}
+  },
+  "layer": [{
+    "mark": {"type": "arc", "outerRadius": 120}
+  }, {
+    "mark": {"type": "text", "radius": 150},
+    "encoding": {
+      "text": {"field": "Reason", "type": "nominal"}
+    }
+  }]
+}
