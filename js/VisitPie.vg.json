@@ -5,7 +5,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/WhyVisitorsGo.csv"
   },
-  "mark": "arc",
+  "mark": {"type":"arc"},
   "encoding": {
     "theta": {"field": "Proportion", "type": "quantitative", "stack": true},
     "color": {
@@ -16,9 +16,11 @@
     }
   },
   "layer": [
-    {"mark": {"type": "arc", "outerRadius": 120}},
+    {"mark": {"type": "arc", "outerRadius": 120},
+    "encoding": {"tooltip":[{"field":"Reason"},{"field":"Proportion"}]}
+    },
     {
-      "mark": {"type": "text", "radius": 150},
+      "mark": {"type": "text", "radius": 145},
       "encoding": {"text": {"field": "Reason", "type": "nominal"}}
     }
   ]
