@@ -11,17 +11,27 @@
       "fold": [
         "National Parks",
         "Metropolitan Parks",
-        "Piers",
-        "Total"
+        "Piers"
       ],
       "as": ["Category", "Visitors"]
+    }
+  ],
+  "params": [
+    {
+      "name": "CategorySelect",
+      "select": {"type":"point", "fields": ["Category"]},
+      "bind":"legend"
     }
   ],
   "mark": "line",
   "encoding": {
     "x": {"field": "Year", "type": "quantitative", "scale":{"domain":[2001,2018]}},
-    "y": {"field": "Visitors", "type": "quantitative", "title": "Visitors"},
+    "y": {"field": "Visitors", "type": "quantitative", "title": "Visitors (Millions)"},
     "color": {"field": "Category", "type": "nominal", "title": "Type"},
+    "opacity": {
+      "condition": {"param": "CategorySelect", "value": 1},
+      "value": 0.1
+    },
     "tooltip": [
       {"field": "Year"},
       {"field": "Category"},
