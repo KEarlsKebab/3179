@@ -1,12 +1,13 @@
 body *{
   font-family: 'Lato', sans-serif;
   font-weight: 800;
-  color: #2B2B2B;
+  color: DarkSlateGray;
+  line-height: 1.8;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #2E5339;
+  color: ForestGreen;
   font-weight: 1500;
   letter-spacing: 0.5px;
 }
