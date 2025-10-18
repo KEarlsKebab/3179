@@ -42,7 +42,7 @@
           "field": "Year",
           "type": "quantitative",
           "title": "Year Established",
-          "scale": {"scheme": "greens", "domain": [1900, 2020]},
+          "scale": {"scheme": "greens", "domain": [1900, 2020]}
         },
         "tooltip": [
     {"field": "Name", "type": "nominal"},
