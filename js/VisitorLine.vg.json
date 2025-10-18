@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "height": 500,
+  "height": 300,
   "width": 500,
   "title": {"text": "Visitors Over Time"},
   "data": {
