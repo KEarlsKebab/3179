@@ -1,14 +1,67 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "vconcat": [
+  "title":{"text":"National Park Campsites"},
+  "hconcat": [
     {
-      "width": 550,
-      "height": 450,
-      "title": "Campgrounds by National Park",
+    "width": 400,
+    "height": 450,
+    "data": {
+      "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
+      "format": {"type": "topojson", "feature": "Campgrounds"}
+    },
+    "transform": [
+      {
+        "filter": "slice(datum.properties.PARK_NAME, length(datum.properties.PARK_NAME) - 13) == 'National Park'"
+      },
+      {
+        "aggregate": [{"op": "count", "as": "count"}],
+        "groupby": ["properties.PARK_NAME"]
+      },
+      {
+        "window": [{"op": "rank", "as": "rank", "sort": [{"field": "count", "order": "descending"}]}]
+      },
+      {
+        "filter": "datum.rank <= 10"
+      }
+    ],
+    "mark": {"type": "bar"},
+    "encoding": {
+      "x": {
+        "field": "properties.PARK_NAME",
+        "type": "ordinal",
+        "sort": "y",
+        "title": "",
+        "axis": {"labelAngle": 40}
+      },
+      "y": {"field": "count", "type": "quantitative", "title": "No. of campsites per park"},
+      "color": {
+        "field": "properties.PARK_NAME",
+        "type": "nominal",
+        "scale": {"scheme": "category20"}
+      },
+      "opacity": {
+        "condition": {"param": "parkSelect", "value": 1},
+        "value": 0.1
+      },
+      "tooltip": [
+        {"field": "properties.PARK_NAME", "title": "Park"},
+        {"field": "count", "title": "No. of Camps"}
+      ]
+    },
+    "params": [
+      {
+        "name": "parkSelect",
+        "select": {"type": "point", "fields": ["properties.PARK_NAME"]}
+      }
+    ]
+    },
+    {
+      "width": 900,
+      "height": 500,
       "projection": {
         "type": "equirectangular",
-        "center": [145.5, -33],
-        "scale": 3400
+        "center": [140.7, -34],
+        "scale": 5500
       },
       "layer": [
         {
@@ -48,53 +101,6 @@
               {"field": "properties.SITE_NAME", "type": "nominal", "title": "Site"}
             ]
           }
-        }
-      ]
-    },
-    {
-      "width": 550,
-      "height":100,
-      "data": {
-        "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
-        "format": {"type": "topojson", "feature": "Campgrounds"}
-      },
-      "transform": [
-        {
-          "filter": "slice(datum.properties.PARK_NAME, length(datum.properties.PARK_NAME) - 13) == 'National Park'"
-        },
-        {
-          "aggregate": [{"op": "count", "as": "count"}],
-          "groupby": ["properties.PARK_NAME"]
-        }
-      ],
-      "mark": {"type": "bar"},
-      "encoding": {
-        "x": {
-          "field": "properties.PARK_NAME",
-          "type": "ordinal",
-          "sort": "-y",
-          "title": "National Park",
-          "axis": {"labelAngle":40}
-        },
-        "y": {"field": "count", "type": "quantitative", "title": "No. of campsites per park"},
-        "color": {
-          "field": "properties.PARK_NAME",
-          "type": "nominal",
-          "scale": {"scheme": "accent"}
-        },
-        "opacity": {
-          "condition": {"param": "parkSelect", "value": 1},
-          "value": 0.1
-        },
-        "tooltip": [
-          {"field": "properties.PARK_NAME", "title": "Park"},
-          {"field": "count", "title": "No. of Camps"}
-        ]
-      },
-      "params": [
-        {
-          "name": "parkSelect",
-          "select": {"type": "point", "fields": ["properties.PARK_NAME"]}
         }
       ]
     }
