@@ -3,7 +3,7 @@
   "title":{"text":"National Park Campsites", "fontSize":30, "color":"forestgreen"},
   "hconcat": [
     {
-    "width": 400,
+    "width": 500,
     "height": 450,
     "data": {
       "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/js/output.json",
