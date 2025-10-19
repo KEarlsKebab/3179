@@ -2,7 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 600,
   "width": 500,
-  "title": "Distance and Establishments",
+  "title": {
+    "text": "Distance & Establishments",
+    "fontSize": 24,
+    "color": "forestgreen"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VicNatParks.csv"
   },
@@ -25,14 +29,14 @@
       "field": "Year",
       "timeUnit": "year",
       "type": "temporal",
-      "title": "Year Established",
-      "axis": {"tickCount": 7},
+      "title":"Year Established",
+      "axis": {"tickCount": 7, "titleFontSize":14},
       "scale": {"domain": [1890, 2020]}
     },
     "y": {
       "field": "Melbourne_Distance",
       "type": "quantitative",
-      "axis": {"tickCount": 6},
+      "axis": {"tickCount": 6, "titleFontSize":14},
       "title": "Distance From Melbournce (km)",
       "scale": {"domain": [0, 500]}
     },
@@ -50,8 +54,7 @@
       "field": "Type",
       "type": "nominal",
       "legend": {"orient": "bottom-left"},
-      "scale": {"domain": ["Terrestrial", "Marine"],
-      "range": ["brown", "blue"]}
+      "scale": {"domain": ["Terrestrial", "Marine"], "range": ["brown", "blue"]}
     },
     "opacity": {
       "condition": {"test": "datum.Area_Ha >= Area_selection", "value": 0.8},
