@@ -2,7 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 275,
   "width": 400,
-  "title": {"text": "Visitors Over Time"},
+  "title": {
+    "text": "Visitors over Time",
+    "fontSize": 24,
+    "color": "forestgreen"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/KEarlsKebab/3179/refs/heads/main/data/VisitorNumbers.csv"
   },
@@ -20,20 +24,19 @@
       "value": [{"Category": "National Parks"}]
     }
   ],
-  "mark": {
-    "type": "line",
-    "strokeWidth": 3
-  },
+  "mark": {"type": "line", "strokeWidth": 3},
   "encoding": {
     "x": {
       "field": "Year",
       "type": "quantitative",
-      "scale": {"domain": [2001, 2018]}
+      "scale": {"domain": [2001, 2018]},
+      "axis": {"titleFontSize":14}
     },
     "y": {
       "field": "Visitors",
       "type": "quantitative",
-      "title": "Visitors (Millions)"
+      "title": "Visitors (Millions)",
+      "axis": {"titleFontSize":14}
     },
     "color": {
       "field": "Category",
@@ -43,7 +46,7 @@
         "domain": ["National Parks", "Metropolitan Parks", "Piers"],
         "range": ["green", "red", "blue"]
       },
-      "legend": {"orient": "bottom-right"}
+      "legend": {"orient": "bottom-right", "labelFontSize":12}
     },
     "opacity": {
       "condition": {"param": "CategorySelect", "value": 1},
