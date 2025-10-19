@@ -36,8 +36,9 @@
       "field": "Category",
       "type": "nominal",
       "title": "Type",
-      "scale": {"scheme": "accent"},
-      "legend": { "orient": "bottom" }
+      "scale": {"domain": ["National Parks", "Metropolitan Parks", "Piers"],
+      "range": ["green", "red", "blue"]},
+      "legend": {"orient": "bottom-right"}
     },
     "opacity": {
       "condition": {"param": "CategorySelect", "value": 1},
