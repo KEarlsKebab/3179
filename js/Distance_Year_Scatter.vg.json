@@ -49,7 +49,9 @@
     "color": {
       "field": "Type",
       "type": "nominal",
-      "legend": {"orient": "bottom-left"}
+      "legend": {"orient": "bottom-left"},
+      "scale": {"domain": ["Terrestrial", "Marine"],
+      "range": ["brown", "blue"]}
     },
     "opacity": {
       "condition": {"test": "datum.Area_Ha >= Area_selection", "value": 0.8},
@@ -59,7 +61,7 @@
       {"field": "Name"},
       {"field": "Area_Ha"},
       {"field": "Melbourne_Distance", "title": "Distance to CBD (km)"},
-      {"field": "Year", "type": "temporal", "timeUnit":"year"}
+      {"field": "Year", "type": "temporal", "timeUnit": "year"}
     ]
   }
 }
