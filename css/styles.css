@@ -1,5 +1,5 @@
 body *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Serif 4', sans-serif;
   font-weight: 300;
   color: SaddleBrown;
   line-height: 1.8;
@@ -8,7 +8,7 @@ body *{
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Cabin Sketch', sans-serif;
   color: ForestGreen;
   font-weight: 5000;
   letter-spacing: 0.5px;
