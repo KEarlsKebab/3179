@@ -51,7 +51,7 @@
           {
             "field": "Melbourne_Distance",
             "type": "quantitative",
-            "title": "Distance to Melbourne (km)",
+            "title": "CBD distance (km)",
             "format": ".3s"
           }
         ]
